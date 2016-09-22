@@ -43,6 +43,13 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
+    
+    @Test
+    public void testInvertXY(){
+    	this.pt.invertXY();
+    	assertEquals(3, pt.getX());
+    	assertEquals(2, pt.getY());	
+    }
 
     @Test
     public void testToString() {

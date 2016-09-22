@@ -37,6 +37,12 @@ public class Point {
         this.x -= origin.getX();
         this.y -= origin.getY();
     }
+    
+    public void invertXY(){
+    	int aux = this.x;
+    	this.x = this.y;
+    	this.y = aux;
+    }
 
     @Override
     public String toString() {
