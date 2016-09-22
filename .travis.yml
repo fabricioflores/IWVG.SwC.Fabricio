@@ -1,0 +1,18 @@
+language: java
+
+jdk:
+  - oraclejdk8
+  
+branches:
+  only:
+    - master
+    - develop
+    
+notifications:
+  email:
+    recipients:
+      - fabricio.flores.gallardo@alumnos.upm.es
+    on_success: change
+    on_failure: always
+      
+script: mvn verify
