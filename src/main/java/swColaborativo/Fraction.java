@@ -25,5 +25,11 @@ public class Fraction {
     public double decimal() {
         return (double) numerator / denominator;
     }
+    
+    public void invert() {
+        int numerator=this.numerator;
+        this.numerator=this.getDenominator();
+        this.denominator=numerator;
+    }
 
 }

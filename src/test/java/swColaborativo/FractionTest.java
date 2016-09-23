@@ -31,5 +31,12 @@ public class FractionTest {
 	public void testDecimal(){
 		assertEquals(0.5, fraction.decimal(), 10e-5);
 	}
+	
+	@Test
+    public void invert(){
+	    this.fraction.invert();
+        assertEquals(4, this.fraction.getNumerator());
+        assertEquals(2, this.fraction.getDenominator());
+    }
 
 }
