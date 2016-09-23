@@ -31,5 +31,9 @@ public class Fraction {
         this.numerator=this.getDenominator();
         this.denominator=numerator;
     }
-
+    
+    @Override
+    public String toString(){
+    	return(this.numerator+"/"+this.denominator);
+    }
 }
