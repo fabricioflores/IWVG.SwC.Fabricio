@@ -45,5 +45,10 @@ public class UserTest {
 	public void testgetFamilyName() {
 		assertTrue(user.getFamilyName().equals("Flores"));
 	}
+	
+	@Test
+	public void testNombreInicialApellido(){
+		assertTrue(user.nombreInicialApellido().equals("Fabricio F."));
+	}
 
 }

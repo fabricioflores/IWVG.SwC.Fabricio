@@ -25,5 +25,23 @@ public class Fraction {
     public double decimal() {
         return (double) numerator / denominator;
     }
+    
+    public void invert() {
+        int numerator=this.numerator;
+        this.numerator=this.getDenominator();
+        this.denominator=numerator;
+    }
+    
+    @Override
+    public String toString(){
+    	return(this.numerator+"/"+this.denominator);
+    }
 
+    public boolean isPropia(){
+		if (this.numerator < this.denominator){
+			return true;
+		}else{
+			return false;
+		}
+	}
 }
